@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<!--Blaze Swieton 5/6/26 - Web-114 Final Project. I'm working on a mindfulness website.-->
+
+<html lang="en">
+  <head>
+    <title>Mindfulness App</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="mindful.css" type="text/css">
+    <script src="mindful.js" defer></script>
+  </head>
+  <body>
+    <div class="gallery-container">
+      <!--<img src="img/ripple.jpeg" alt="a rock creating ripples on water">-->
+      <!--I had some difficulty getting the image to go as background for "mindfulness app". was able to research
+      online sources and format correctly. I had been targeting the gallery heading OUTSIDE the <h1>element
+      i had to ultmately remove the <img> element and target #gallery-heading so that the image was more pleasing to the eye and
+      didn't take up unneccesary space, looking clunky-->
+
+    <h1 id="gallery-heading">Mindfulness App</h1>
+
+    <div id="image-row">
+
+      <div class="feeling-card">
+        <img src="img/anxious.jpg" alt="a calming image" class="feeling-img">
+        <button id="anxiousBtn">Anxious</button>
+        </div>
+
+        <div class="feeling-card">
+          <img src="img/angry.jpg" alt="angry guy" class="feeling-img">
+          <button id="angryBtn">Angry</button>
+        </div>
+
+      <div class="feeling-card">
+        <img src="img/lemon.jpg" alt="a crying lemon" class="feeling-img">
+        <button id="sadBtn">Sad</button>
+      </div>
+
+      <div class="feeling-card">
+        <img src="img/crying.jpg" alt="crying" class="feeling-img">
+        <button id="depressedBtn">Depressed</button>
+      </div>
+
+      <div class="feeling-card">
+        <img src="img/exhausted.jpg" alt="a woman laying on a pile of papers" class="feeling-img">
+        <button id="Btn="Exhausted>Exhausted</button>
+      </div>
+
+    </div>
+    <!--each div class is an individual feeling with an image lining up with it's own button, making the 
+    issue with the buttons being in 2 places resolve-->
+
+     <p id="caption"></p>
+
+      </div>
+  </body>
+  
+
+   <!--<img src="img/ripple.jpeg" alt="a rock creating ripples on water">-->
+      <!--I had some difficulty getting the image to go as background for "mindfulness app". was able to research
+      online sources and format correctly. I had been targeting the gallery heading OUTSIDE the <h1>element
+      i had to ultmately remove the <img> element and target #gallery-heading so that the image was more pleasing to the eye and
+      didn't take up unneccesary space, looking clunky-->
+    
+         <!--<div id = "image-row">  <I removed my single <img> source and created an image-row to make
+      a flexbox and display all images at once instead of one by one. 
+      THIS WORKED CODE WORKED, BUT NOT IN THE WAY I WANTED SO I MADE THE IMAGE-ROW DIV (SEE BELOW)
+      <img src="img/calming.jpg" alt="a calming image" class="feeling-img" data-index="0">
+      <img src="img/enough.jpg" alt="a mug" class="feeling-img" data-index="1">
+      <img src="img/heart.jpg" alt="a heart" class="feeling-img" data-index="2">
+      <img src="img/candle.jpg" alt="a candle" class="feeling-img" data-index="3">
+      <img src="img/unplug.jpg" alt="unplugging brains" class="feeling-img" data-index="4">
+    </div>-->
+    
+      <!--THIS ALL ENDED UP BEING REDUNDANT AND GIVING ME 2 BUTTON SECTIONS 
+    <img id="feeling-image" src="" alt="" style="display:none";>  don't need this with the image-row-->
+     <!--I added an image id so that i could bring in the images along with alt and src elements
+      using javascript style display none keeps the image from showing upon page load-
+    <div id="buttons">
+    <button id="anxiousBtn">Anxious</button>
+    <button id="angryBtn">Angry</button>
+    <button id="sadBtn">Sad</button>
+    <button id="depressedBtn">Depressed</button>
+    <button id="irritableBtn">Irritable</button>
+    </div><I fixed the <div> elements to include buttons in the 
+      gallery container element-
+  </div>
+  </body>-->

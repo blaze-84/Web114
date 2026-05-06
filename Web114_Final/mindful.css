@@ -1,0 +1,108 @@
+/*Web-114 Final - Blaze Swieton 5/6/26*/
+
+/*the ripple image was being cut off. I tried background size 100% and with auto and it would 
+either repeat or make the picture too large, cutting off the ripple. with "contain" i
+still encountered repeating issues and it didn't look good. Using "cover"
+and adjusting the percentage allowed me to center the picture and
+stretch it appropriately across the screen*/
+#gallery-heading {
+   background-image: url("img/ripple.jpeg");
+   background-size: cover; 
+   background-position: center 45%; 
+   min-height: 200px; /*allows for predictability*/
+   padding: 90px 20px 20px; /*targets top right, left bottom*/
+   margin: 40px;
+   color: #FCFCFC;
+   text-align: center;
+   border: solid;
+   border-radius: 30px;
+   border-color:#0A0A09
+}
+
+
+#image-row {              
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+  /*instead of the #feeling-image, this image-row element allows me to wrap text onto the next line, such as on small screens
+ as well as leave space between and in margin */
+
+
+/*#buttons button {
+    color: #0d0d0d;
+    background-color: #E8E22E;
+} this element was no longer needed when i changed to "image-row" and div class "feeling-card". i added new
+ code below to adjust the buttons*/
+
+.feeling-card button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #9C9C9C;
+    color: #0A0A09;
+    font-size: 14px;
+    width: 100%;
+}
+
+.feeling-card {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between; /* will space out my columns and make it look better*/
+    width: 18%; /*adding justify-content to put my buttons at the bottom of each corresponding image*/
+    gap: 8px;
+}
+/*.feeling-card allows me to align all 5 pictures in aligned, equal columns. controlling both button and image
+inside the flex box.allots space outside cards.*/
+
+.feeling-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: solid;
+    border-radius: 30px;
+    object-position: center;
+    display: block; /*I NEED TO FIGURE OUT HOW TO CORRECTLY FORMAT MY IMAGES SO NOTHING IS CUT OFF*/
+}
+/*.feeling-img ensures each feeling card takes up the width of it's assigned card. cards remain uniform and proportionate */
+#caption {
+    text-align: center;
+    font-size: 18px; 
+    color: #0d0d0d;
+    padding: 10px 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 30px;
+}
+
+
+/*text is centered with the caption attribute, colored black and margin/padding added to make it look uniform. max-width
+prevents distortions based on screen size. the text has space between the cards and each message.*/
+
+/*brushing up on CSS, need to remind myself that padding adjusts
+INSIDE the element. If I need to adjust spacing OUTSIDE/BETWEEN 
+the elements, then use margin*/
+
+
+/*It took me a minute to review and I needed to remember that because this is a button element, I did
+not need to target a class (.) or id (#)*/
+
+body {
+    background-color: #4871A3;
+} 
+
+/*#feeling-image {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+
+} allows me to grab by id and show the images, sized appropriately, when feelings are clicked*/
+
+
+/*MY NEXT STEP IS TO CREATE SPACE BETWEEN MY GALLERY-CONTAINER, IMAGE-HEADING & IMAGE ROW
+ALSO, ADD ADDITIONAL IF/ELSE, FUNCTIONS, LOGICAL OPERATORS, ETC TO FULFILL ALL REQUIREMENTS*/
